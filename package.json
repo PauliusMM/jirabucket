@@ -1,0 +1,95 @@
+{
+    "name": "jirabucket",
+    "displayName": "JiraBucket",
+    "description": "",
+    "version": "0.0.2",
+    "license": "MIT",
+    "author": {
+        "name": "Paulius Martuzas"
+    },
+    "publisher": "pigu",
+    "engines": {
+        "vscode": "^1.47.0"
+    },
+    "categories": [
+        "Other"
+    ],
+    "activationEvents": [
+        "onCommand:jirabucket.jira",
+        "onCommand:jirabucket.bitbucket"
+    ],
+    "main": "./out/extension.js",
+    "icon": "images/jiraitbucket.png",
+    "contributes": {
+        "configuration": {
+            "title": "JiraBucker Configuration",
+            "properties": {
+                "jirabucket.projectKeys": {
+                    "description": "A list of project keys",
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                },
+                "jirabucket.jiraHost": {
+                    "description": "Jira project host",
+                    "type": "string"
+                },
+                "jirabucket.bitbucketHost": {
+                    "description": "Bitbucket project host",
+                    "type": "string"
+                },
+                "jirabucket.gitHosts": {
+                    "description": "Git bitbucket hots: ssh or https",
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                }
+            }
+        },
+        "commands": [
+            {
+                "command": "jirabucket.jira",
+                "title": "Open Jira issue"
+            },
+            {
+                "command": "jirabucket.bitbucket",
+                "title": "Open Bitbucket commit"
+            }
+        ],
+        "menus": {
+            "editor/context": [
+                {
+                    "command": "jirabucket.jira",
+                    "group": "jirabucket@1"
+                },
+                {
+                    "command": "jirabucket.bitbucket",
+                    "group": "jirabucket@2"
+                }
+            ]
+        }
+    },
+    "scripts": {
+        "vscode:prepublish": "npm run compile",
+        "compile": "tsc -p ./",
+        "lint": "eslint src --ext ts",
+        "watch": "tsc -watch -p ./",
+        "pretest": "npm run compile && npm run lint",
+        "test": "node ./out/test/runTest.js"
+    },
+    "devDependencies": {
+        "@types/vscode": "^1.47.0",
+        "@types/glob": "^7.1.1",
+        "@types/mocha": "^7.0.2",
+        "@types/node": "^13.11.0",
+        "eslint": "^6.8.0",
+        "@typescript-eslint/parser": "^2.30.0",
+        "@typescript-eslint/eslint-plugin": "^2.30.0",
+        "glob": "^7.1.6",
+        "mocha": "^7.1.2",
+        "typescript": "^3.8.3",
+        "vscode-test": "^1.3.0"
+    }
+}
