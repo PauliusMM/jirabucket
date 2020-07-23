@@ -4,6 +4,14 @@
     "description": "",
     "version": "0.0.2",
     "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://bitbucket.org/PauliusMM/jirabucket"
+    },
+    "homepage": "https://bitbucket.org/PauliusMM/jirabucket",
+    "bugs": {
+        "url": "https://bitbucket.org/PauliusMM/jirabucket/issues"
+    },
     "author": {
         "name": "Paulius Martuzas"
     },
