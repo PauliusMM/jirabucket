@@ -2,7 +2,7 @@
     "name": "jirabucket",
     "displayName": "JiraBucket",
     "description": "",
-    "version": "0.0.3",
+    "version": "0.0.4",
     "license": "MIT",
     "repository": {
         "type": "git",
@@ -15,7 +15,7 @@
     "author": {
         "name": "Paulius Martuzas"
     },
-    "publisher": "pigu",
+    "publisher": "PauliusMM",
     "engines": {
         "vscode": "^1.47.0"
     },
