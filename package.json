@@ -2,7 +2,7 @@
     "name": "jirabucket",
     "displayName": "JiraBucket",
     "description": "",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "license": "MIT",
     "repository": {
         "type": "git",
@@ -30,7 +30,7 @@
     "icon": "images/jiraitbucket.png",
     "contributes": {
         "configuration": {
-            "title": "JiraBucker Configuration",
+            "title": "JiraBucket Configuration",
             "properties": {
                 "jirabucket.projectKeys": {
                     "description": "A list of project keys",

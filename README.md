@@ -55,6 +55,6 @@ Bitbucket issue keys are detected by looking for `ABC-1234` in the commit messag
 
 ## Release Notes
 
-### 0.0.1
+### 0.0.3
 
 * Bare example of simple jira/bitbucket toolset
